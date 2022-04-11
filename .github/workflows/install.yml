@@ -5,10 +5,9 @@ env:
   ARTIFACT_ID: install-octokat-app
   VERSION: 1.0-SNAPSHOT
   CLASS_NAME: InstallApp
-  TARGET_GROUP_ID: com.octokat.app
-  TARGET_ARTIFACT_ID: octokat-app
-  TARGET_VERSION: 1.0-SNAPSHOT
-  TARGET_CLASS_NAME: PublishApp
+  TARGET_GROUP_ID: com.stoyanr
+  TARGET_ARTIFACT_ID: evictor
+  TARGET_VERSION: 1.0.0
 
 jobs:
   install:
@@ -61,7 +60,6 @@ jobs:
           {
               public static void main( String[] args )
               {
-                  ${{ env.TARGET_CLASS_NAME }}.main( new String[0] );
               }
           }
           END
